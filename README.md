@@ -1,4 +1,4 @@
-# Data Type Tools
+# Print Tools
 [![Build Status](https://travis-ci.org/edmundpf/datatype_tools.svg?branch=master)](https://travis-ci.org/edmundpf/print_tools)
 > Includes useful methods for stylized/formatted printing.
 ## Install
