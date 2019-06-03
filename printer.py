@@ -59,7 +59,10 @@ class Printer:
 	#: Print Success
 
 	def success(self, text, log=True):
-		self.log(f"{c.bold_seaGreen('SUCCESS:')} {text}") if log else print(f"{c.bold_seaGreen('SUCCESS:')} {text}")
+		if self.style == 'monokai':
+			self.log(f"{c.bold_seaGreen('SUCCESS:')} {text}") if log else print(f"{c.bold_seaGreen('SUCCESS:')} {text}")
+		elif self.style == 'solarized':
+			self.log(f"{c.bold_green('SUCCESS:')} {text}") if log else print(f"{c.bold_green('SUCCESS:')} {text}")
 
 	#: Print Arrow
 
