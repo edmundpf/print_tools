@@ -1,5 +1,6 @@
 # Print Tools
 [![Build Status](https://travis-ci.org/edmundpf/print_tools.svg?branch=master)](https://travis-ci.org/edmundpf/print_tools)
+[![PyPI version](https://badge.fury.io/py/print-tools.svg)](https://badge.fury.io/py/print-tools)
 > Includes useful methods for stylized/formatted printing.
 ## Install
 * `python3 -m pip install print-tools`
