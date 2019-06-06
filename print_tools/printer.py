@@ -81,7 +81,7 @@ class Printer:
 
 	#: Format String
 
-	def format(self, text, format_op='[]', reset=True, log=False):
+	def format(self, text, format_op='[]', reset=True, ret=False, log=False):
 		format_start = format_op[0]
 		format_end = format_op[1]
 		format_count = text.count(format_start)
@@ -134,6 +134,9 @@ class Printer:
 			text = text.replace(format_ops[i]['string'], format_str)
 		if reset:
 			text = text + '{c.reset}'
-		self.log(c.format(text)) if log else print(c.format(text))
+		if ret:
+			return c.format(text)
+		else:
+			self.log(c.format(text)) if log else print(c.format(text))
 
 #::: END PROGRAM:::
